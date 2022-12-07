@@ -1,0 +1,16 @@
+.skillImg {
+  width: 55%;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .skillImg {
+    width: 40%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+  .skillImg {
+    width: 30%;
+  }
+}

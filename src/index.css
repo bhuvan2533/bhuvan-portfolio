@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+:root {
+  --sec-color: #2ee6e3;
+}
+
+/* Scrollbar  */
+body::-webkit-scrollbar {
+  width: 0.18rem;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--sec-color);
+  outline: 2px solid var(--sec-color);
+}
+
+/* Header for each section  */
+.sectionStyle {
+  background-color: #040407 ;
+  width: 100%;
+  padding: 8% 12%;
+}
+.sectionH1 {
+  color: white;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+}
+
+body {
+  background-color: #040407 !important;
+}
+.centerHr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr.ul {
+  background-image: url("../src/images/underline.svg");
+  background-repeat: repeat-x;
+  border: 0;
+  opacity: 0.2;
+  height: 6px;
+  padding: 4px;
+  width: 70%;
+}
+
+.cpy {
+  color: rgba(255, 255, 255, 0.458) !important;
+  font-family: "Space mono";
+  overflow: hidden;
+}
+.socialIcons {
+  color: rgba(255, 255, 255, 0.458);
+  font-size: 33px !important;
+}
+
+.socialIcons:hover {
+  color: rgba(255, 255, 255, 0.814);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .sectionH1 {
+    font-size: 1.93rem;
+    margin-bottom: 3.5rem;
+  }
+  .sectionStyle {
+    padding: 16% 5.2%;
+  }
+  .socialIcons {
+    font-size: 28px !important;
+  }
+
+  footer {
+    display: block;
+    padding-bottom: 90px;
+  }
+  .cpy {
+    font-size: 10px;
+  }
+  .card .viewBtn {
+    padding: 1px 1px !important;
+  }
+  #project {
+    padding: 16% 7%;
+  }
+}
+
+/* # Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .sectionH1 {
+    font-size: 2.63rem;
+    margin-bottom: 3.8rem;
+  }
+  .sectionStyle {
+    padding: 7% 9%;
+  }
+  .cpy {
+    font-size: 15px;
+  }
+}
